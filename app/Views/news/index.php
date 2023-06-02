@@ -9,7 +9,9 @@
         <div class="main">
             <?= esc($news_item['body']) ?>
         </div>
-        <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
+        <p>
+            <a href="news/<?= esc($news_item['slug'], 'url')?>">View article</a>
+        </p>
 
     <?php endforeach ?>
 

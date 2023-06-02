@@ -20,4 +20,3 @@ class NewsModel extends Model
     }
 }
 
-?>
