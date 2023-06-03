@@ -63,3 +63,5 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 
 
 NOTE: When running systeme on server remove the index and .htaccess and copy them back to Public or else retain current position to use xampp serve on local 
+
+APP COMPLETE: Basic CI4 CRUD fucntionality pages mostly focusing on CR
