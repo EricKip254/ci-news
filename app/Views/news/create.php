@@ -3,7 +3,9 @@
 <?= session()->getFlashdata('error') ?>
 <?= validation_list_errors() ?>
 
-<form action="  news/create" method="post">
+<!-- In your view if set to "news/create", which is a relative URL. This might cause the URL concatenation issue -->
+<!-- To fix the issue, you can use the base_url() function to generate the correct URL -->
+<form action="<?= base_url('news/create') ?>" method="post">
     <?= csrf_field() ?>
 
     <label for="title">Title</label>

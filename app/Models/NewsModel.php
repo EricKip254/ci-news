@@ -8,6 +8,9 @@ class NewsModel extends Model
 {
     protected $table = 'news';
 
+    // id, timestamps are not passed to avoid Mass Assignment Vulnerabilities
+    protected $allowedFields = ['title', 'slug', 'body'];
+
     // query builder gets news items and by its slug
     public function getNews($slug = false)
     {
